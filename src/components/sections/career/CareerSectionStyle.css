@@ -1,0 +1,16 @@
+.career-grid {
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .career-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

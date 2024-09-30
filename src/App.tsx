@@ -1,12 +1,12 @@
-import './App.css'
-import ButtonAppBar from './components/DeveloperCV'
+import './App.css';
+import MainComponent from './components/MainComponent';
 
 function App() {
   return (
     <div className="App">
-      <ButtonAppBar />
+      <MainComponent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

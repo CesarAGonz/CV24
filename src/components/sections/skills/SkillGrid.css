@@ -15,9 +15,9 @@
     color: #ccc;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Alinea verticalmente al centro */
-    align-items: center; /* Alinea horizontalmente al centro */
-    text-align: center; /* Alinea el texto horizontalmente al centro */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     min-height: 150px;
     height: 100%;
   }

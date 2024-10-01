@@ -1,52 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import CareerItem from './CareerItem.tsx'; // Asegúrate de importar correctamente el componente
-import './CareerSectionStyle.css'; // Para los estilos
+import React, { useState } from 'react';
+import CareerItem from './CareerItem.tsx';
+import './CareerSectionStyle.css';
+import { careerData } from '../../../configs/config';
+import { CareerItem as CareerItemInterface } from '../../../configs/interfaces';
 
 const CareerSection: React.FC = () => {
-  const data = [
-    {
-      "title": "Fullstack Developer",
-      "company": "Taquitos inc",
-      "duration": "2018 - Present",
-      "description": "Se vienen cositas"
-    },
-    {
-      "title": "Frontend Developer",
-      "company": "Tacos inc",
-      "duration": "2017 - 2018",
-      "description": "Responsable de la UI/UX"
-    },
-    {
-      "title": "Backend Developer",
-      "company": "Quesadillas Corp",
-      "duration": "2015 - 2017",
-      "description": "Desarrollo de APIs"
-    },
-    {
-      "title": "Backend Developer",
-      "company": "Quesadillas Corp",
-      "duration": "2015 - 2017",
-      "description": "Desarrollo de APIs"
-    },
-    {
-      "title": "Backend Developer",
-      "company": "Quesadillas Corp",
-      "duration": "2015 - 2017",
-      "description": "Desarrollo de APIs"
-    },
-    {
-      "title": "Backend Developer",
-      "company": "Quesadillas Corp",
-      "duration": "2015 - 2017",
-      "description": "Desarrollo de APIs Desarrollo de APIs Desarrollo de APIs Desarrollo de APIs Desarrollo de APIs"
-    }
-  ];
-
-  const [careerItems, setCareerItems] = useState<any[]>(data);
+  const [careerItems] = useState<CareerItemInterface[]>(careerData);
 
   return (
-    <section id='career' className='fadeInLeft'>
-      <div className='career-grid'>
+    <section id="career" className="career-container">
+      <div className="career-title-wrapper">
+        <h2 className="career-title">Career</h2>
+      </div>
+      <div className="career-grid">
         {careerItems.map((item, index) => (
           <CareerItem
             key={index}

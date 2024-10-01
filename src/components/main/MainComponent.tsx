@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../sections/header/index.tsx';
 import Section from '../Section.tsx';
 import CareerItem from '../sections/career/index.tsx';
-import SkillGrid from '../SkillGrid.tsx';
+import SkillGrid from '../sections/skills/SkillGrid.tsx';
 import ProjectGrid from '../ProjectGrid.tsx';
 import ContactForm from '../ContactForm.tsx';
 import AboutMe from '../sections/about/index.tsx'
@@ -23,9 +23,9 @@ const MainComponent: React.FC = () => {
           <Section id='skills' animation='fadeInLeft'>
             <SkillGrid />
           </Section>
-          <Section id='projects' animation='fadeInLeft'>
+          {/* <Section id='projects' animation='fadeInLeft'>
             <ProjectGrid />
-          </Section>
+          </Section> */}
           <Section id='contact' animation='fadeInLeft'>
             <ContactForm />
           </Section>

@@ -1,16 +1,129 @@
+.career-container {
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.career-title-wrapper {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.career-title {
+  font-size: 2.5rem;
+  color: #00b8d4;
+  font-weight: bold;
+}
+
 .career-grid {
-    justify-content: space-around;
-    align-items: center;
-    padding: 100px;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: start;
+}
+
+.career-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  height: 100%;
+}
+
+.career-grid > .career-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.career-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.career-card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00b8d4;
+  margin-bottom: 0.5rem;
+}
+
+.career-card p {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.career-card .company-duration {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .career-title {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 768px) {
-    .career-grid {
-      grid-template-columns: 1fr;
-    }
+
+  .career-card h3 {
+    font-size: 1.6rem;
   }
-  
+
+  .career-card .company-duration {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-title {
+    font-size: 1.8rem;
+  }
+
+  .career-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .career-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .career-card p {
+    font-size: 1.1rem;
+  }
+
+  .career-card .company-duration {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-title {
+    font-size: 1.6rem;
+  }
+
+  .career-grid {
+    padding: 0 10px;
+  }
+
+  .career-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .career-card p {
+    font-size: 1rem;
+  }
+
+  .career-card .company-duration {
+    font-size: 0.9rem;
+  }
+}

@@ -4,3 +4,8 @@ export interface CareerItem {
     duration: string;
     description: string;
   }  
+
+  export interface Skill {
+    title: string;
+    icon: React.FC;
+  }

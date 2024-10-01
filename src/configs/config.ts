@@ -1,5 +1,9 @@
-import { CareerItem } from './interfaces';
-
+import { CareerItem, Skill } from './interfaces';
+import CodepenIcon from '../components/icons/CodepenIcon';
+import EclipseIcon from '../components/icons/EclipseIcon';
+import DatabaseIcon from '../components/icons/DatabaseIcon';
+import GitGraphIcon from '../components/icons/GitGraphIcon';
+import DockIcon from '../components/icons/DockIcon';
 
 export const navLinks: string[] = ["About", "Career", "Skills", "Projects", "Contact"];
 
@@ -34,5 +38,34 @@ export const careerData: CareerItem[] = [
       duration: "July 2019 — July 2020",
       description: "Manager of an IT department at a metallurgical company that required development services for an ERP system and other related products. Additionally, I implemented technology solutions for security measures and COVID-19 prevention protocols.",
     },
+  ];
+  
+
+  export const skills: Skill[] = [
+    { title: "React", icon: CodepenIcon },
+    { title: "Node.js", icon: CodepenIcon },
+    { title: "JavaScript", icon: EclipseIcon },
+    { title: "CSS", icon: CodepenIcon },
+    { title: "MongoDB", icon: DatabaseIcon },
+    { title: "PostgreSQL", icon: DatabaseIcon },
+    { title: "Git", icon: GitGraphIcon },
+    { title: "Docker", icon: DockIcon },
+    { title: "Symfony", icon: CodepenIcon },
+    { title: "PHP", icon: EclipseIcon },
+    { title: "Python", icon: EclipseIcon },
+    { title: "Vue", icon: CodepenIcon },
+    { title: "Dojo", icon: CodepenIcon },
+    { title: "TypeScript", icon: EclipseIcon },
+    { title: "HTML5", icon: CodepenIcon },
+    { title: "Bootstrap", icon: CodepenIcon },
+    { title: "AWS", icon: DatabaseIcon },
+    { title: "Lambda", icon: DatabaseIcon },
+    { title: "MySQL", icon: DatabaseIcon },
+    { title: "GraphQL", icon: DatabaseIcon },
+    { title: "Github", icon: GitGraphIcon },
+    { title: "Linux", icon: DockIcon },
+    { title: "Matlab", icon: EclipseIcon },
+    { title: "Java", icon: EclipseIcon },
+    { title: "C++", icon: EclipseIcon }
   ];
   

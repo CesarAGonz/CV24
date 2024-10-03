@@ -42,15 +42,6 @@ section {
   margin: 0 auto;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: #1a1a1a;
-  z-index: 1000;
-  padding: 20px 0;
-}
-
 @media (max-width: 768px) {
   .scrollContainer {
     padding-top: 100px;
@@ -65,107 +56,10 @@ header {
   .main {
     padding: 20px;
   }
-
-  h1, h2, h3, h4 {
-    font-size: 5vw;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 3.5vw;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-
-  .profile-name {
-    font-size: 5.5vw;
-    margin-bottom: 10px;
-  }
-
-  .profile-title {
-    font-size: 4.5vw;
-    margin-bottom: 10px;
-  }
-
-  .about-me-description {
-    font-size: 4vw;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-
-  nav {
-    font-size: 3.5vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .menu-item {
-    margin: 0 5px;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
-
-  .profile-image {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-
-  .about-me-content {
-    padding: 15px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
 }
 
 @media (max-width: 480px) {
   .sectionContent {
     gap: 0.5rem;
-  }
-
-  h1, h2, h3, h4 {
-    font-size: 6vw;
-  }
-
-  p {
-    font-size: 4vw;
-  }
-
-  .profile-name {
-    font-size: 6.5vw;
-  }
-
-  .profile-title {
-    font-size: 5.5vw;
-  }
-
-  .about-me-description {
-    font-size: 5vw;
-  }
-
-
-  .profile-image {
-    width: 60vw;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  .about-me-content {
-    padding: 10px;
-  }
-
-  nav {
-    font-size: 4vw;
-  }
-
-  .menu-item {
-    margin: 0 3px;
   }
 }

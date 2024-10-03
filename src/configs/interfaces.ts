@@ -7,5 +7,5 @@ export interface CareerItem {
 
   export interface Skill {
     title: string;
-    icon: React.FC;
+    icon: React.FC<React.SVGProps<SVGSVGElement>>;
   }

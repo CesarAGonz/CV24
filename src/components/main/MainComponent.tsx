@@ -3,7 +3,7 @@ import Header from '../sections/header/index.tsx';
 import Section from '../Section.tsx';
 import CareerItem from '../sections/career/index.tsx';
 import SkillGrid from '../sections/skills/SkillGrid.tsx';
-import ProjectGrid from '../ProjectGrid.tsx';
+// import ProjectGrid from '../ProjectGrid.tsx';
 import ContactForm from '../sections/contact/ContactForm.tsx';
 import AboutMe from '../sections/about/index.tsx'
 import './MainComponentStyles.css';

@@ -4,7 +4,9 @@ import DatabaseIcon from '../components/icons/DatabaseIcon';
 import GitGraphIcon from '../components/icons/GitGraphIcon';
 import DockIcon from '../components/icons/DockIcon';
 
-export const navLinks: string[] = ["About", "Career", "Skills", "Projects", "Contact"];
+// export const navLinks: string[] = ["About", "Career", "Skills", "Projects", "Contact"];
+export const navLinks: string[] = ["About", "Career", "Skills", "Contact"];
+
 
 export const careerData: CareerItem[] = [
     {

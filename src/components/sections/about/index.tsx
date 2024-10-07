@@ -10,7 +10,7 @@ const AboutMe: React.FC = () => {
           alt="Cesar Gonzalez profile"
           className="profile-image"
         />
-        <h2 className="profile-name">Cesar Antonio Gonzalez Rodrigez</h2>
+        <h2 className="profile-name">Cesar Antonio Gonzalez Rodriguez</h2>
         <h3 className="profile-title">Full-Stack Developer</h3>
       </div>
       <div className="about-me-content">

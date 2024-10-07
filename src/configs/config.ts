@@ -1,4 +1,13 @@
 import { CareerItem, Skill } from './interfaces';
+import ReactIcon from '../components/icons/ReactIcon';
+import NodeIcon from '../components/icons/NodeIcon';
+import CSSIcon from '../components/icons/CSSIcon';
+import SymfonyIcon from '../components/icons/SymfonyIcon';
+import VueIcon from '../components/icons/VueIcon';
+import DojoIcon from '../components/icons/DojoIcon';
+import HtmlIcon from '../components/icons/HtmlIcon';
+import BootstrapIcon from '../components/icons/BootstrapIcon';
+import JsIcon from '../components/icons/JsIcon';
 import CodepenIcon from '../components/icons/CodepenIcon';
 import DatabaseIcon from '../components/icons/DatabaseIcon';
 import GitGraphIcon from '../components/icons/GitGraphIcon';
@@ -44,15 +53,15 @@ export const careerData: CareerItem[] = [
 
   export const skills: Skill[] = [
     // CodepenIcon skills
-    { title: "React", icon: CodepenIcon },
-    { title: "Node.js", icon: CodepenIcon },
-    { title: "CSS", icon: CodepenIcon },
-    { title: "Symfony", icon: CodepenIcon },
-    { title: "Vue", icon: CodepenIcon },
-    { title: "Dojo", icon: CodepenIcon },
-    { title: "HTML5", icon: CodepenIcon },
-    { title: "Bootstrap", icon: CodepenIcon },
-    { title: "JavaScript", icon: CodepenIcon },
+    { title: "React", icon: ReactIcon },
+    { title: "Node.js", icon: NodeIcon },
+    { title: "CSS", icon: CSSIcon },
+    { title: "Symfony", icon: SymfonyIcon },
+    { title: "Vue", icon: VueIcon },
+    { title: "Dojo", icon: DojoIcon },
+    { title: "HTML5", icon: HtmlIcon },
+    { title: "Bootstrap", icon: BootstrapIcon },
+    { title: "JavaScript", icon: JsIcon },
     { title: "PHP", icon: CodepenIcon },
     { title: "Python", icon: CodepenIcon },
     { title: "TypeScript", icon: CodepenIcon },

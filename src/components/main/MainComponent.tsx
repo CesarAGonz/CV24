@@ -6,6 +6,7 @@ import SkillGrid from '../sections/skills/SkillGrid.tsx';
 // import ProjectGrid from '../ProjectGrid.tsx';
 import ContactForm from '../sections/contact/ContactForm.tsx';
 import AboutMe from '../sections/about/index.tsx'
+import Banner from '../ads/Banner.tsx'
 import './MainComponentStyles.css';
 
 const MainComponent: React.FC = () => {
@@ -20,6 +21,7 @@ const MainComponent: React.FC = () => {
           <Section id='career' animation='fadeInLeft'>
             <CareerItem />
           </Section>
+          <Banner />
           <Section id='skills' animation='fadeInLeft'>
             <SkillGrid />
           </Section>

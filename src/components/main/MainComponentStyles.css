@@ -14,7 +14,7 @@ body {
 
 .main {
   flex: 1;
-  overflow-y: auto; /* Permitir desplazamiento vertical */
+  overflow-y: auto;
 }
 
 .scrollContainer {

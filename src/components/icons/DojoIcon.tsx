@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CodepenIcon(props: React.SVGProps<SVGSVGElement>) {
+export default function DojoIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

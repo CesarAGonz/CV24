@@ -1,25 +1,27 @@
-.scrollContainer {
-  height: calc(100vh - 80px);
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
 }
 
-.about-me-section {
-  min-height: calc(100vh - 80px);
+.about-me-content {
+  max-width: 60%;
+}
+
+.profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  scroll-snap-align: start;
-  padding: 20px;
+  text-align: center;
+  margin-right: 40px;
 }
 
 .profile-image {
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
-  height: 250px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   background-color: #ccc;
   margin-bottom: 20px;
@@ -27,41 +29,49 @@
 }
 
 .profile-name {
-  display: flex;
-  justify-content: center;
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+}
+
+.profile-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #00ADEF;
+  margin-bottom: 20px;
 }
 
 .about-me-heading {
   font-size: 2.5rem;
   font-weight: bold;
   color: #00ADEF;
-  text-align: center;
-}
-
-.profile-title {
-  display: flex;
-  justify-content: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #00ADEF;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 .about-me-description {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
   color: #ddd;
   text-align: justify;
 }
 
 @media (min-width: 768px) {
+  .about-me-section {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .profile-container {
+    margin-right: 40px;
+  }
+
+  .about-me-content {
+    max-width: 60%;
+  }
+
   .profile-image {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
 
   .profile-name {
@@ -73,7 +83,7 @@
   }
 
   .about-me-heading {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .about-me-description {
@@ -83,8 +93,14 @@
 }
 
 @media (max-width: 768px) {
-  .scrollContainer {
-    height: calc(100vh - 100px);
+  .about-me-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
   }
 
   .profile-name {
@@ -96,16 +112,11 @@
   }
 
   .about-me-heading {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .about-me-description {
     font-size: 1rem;
-    text-align: justify;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 200px;
+    line-height: 1.6;
   }
 }

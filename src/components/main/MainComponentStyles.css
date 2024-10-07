@@ -44,9 +44,6 @@ section {
 }
 
 @media (max-width: 920px) {
-  .scrollContainer {
-    padding-top: 100px;
-  }
 
   .sectionContent {
     padding: 0 1rem;
